@@ -1,5 +1,15 @@
 {
   "version": 2,
-  "builds": [{ "src": "./bdd4/index.js", "use": "@vercel/node" }],
-  "rewrites": [{ "source": "/(.*)", "destination": "./bdd4/index.js" }]
+  "builds": [
+    {
+      "src": "bdd4/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "bdd4/index.js"
+    }
+  ]
 }
